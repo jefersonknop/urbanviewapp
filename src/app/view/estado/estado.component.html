@@ -1,0 +1,13 @@
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>{{titulo}}</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let estado of estados; let i = index;">
+      <ion-label>{{ estado.sigla }} - {{ estado.nome }}</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll>
+    <ion-infinite-scroll-content loadingText="Please wait..." loadingSpinner="bubbles"></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

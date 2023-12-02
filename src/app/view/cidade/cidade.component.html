@@ -1,0 +1,14 @@
+
+<ion-content>
+    <ion-list>
+        <ion-list-header>
+          <ion-label>{{titulo}}</ion-label>
+        </ion-list-header>
+        <ion-item *ngFor="let cidade of cidades; let i = index;">
+          <ion-label>{{ cidade.nome }}/{{ cidade.estado_id.sigla }}</ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-infinite-scroll>
+        <ion-infinite-scroll-content loadingText="Please wait..." loadingSpinner="bubbles"></ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+    </ion-content>

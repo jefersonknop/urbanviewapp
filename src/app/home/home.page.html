@@ -1,14 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      UrbanView
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-
 <ion-content [fullscreen]="true">
-  <ion-button expand="block">Cadastros</ion-button>
-  <ion-button expand="full">Ocorrências</ion-button>
-  <ion-button expand="full">teste</ion-button>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title>Urban View</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="navegacao-adm">
+    <a href="/cidades">
+      <button>Cidade</button>
+    </a>
+    <a href="/cidade_create">
+      <button>Cadastrar cidade</button>
+    </a>
+    <a href="/estados">
+      <button>Estados</button>
+    </a>
+    <a href="/estado_create">
+      <button>Cadastrar estado</button>
+    </a>
+  </div>
 </ion-content>
+

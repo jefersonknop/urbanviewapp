@@ -1,0 +1,27 @@
+
+<ion-list>
+  <ion-item>
+    <ion-input label="Nome" [(ngModel)]="cidade.nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Código IBGE" [(ngModel)]="cidade.codigo_ibge"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Populacao" [(ngModel)]="cidade.populacao_2010"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Densidade demo." [(ngModel)]="cidade.densidade_demo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Gentilico" [(ngModel)]="cidade.gentilico"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Área" [(ngModel)]="cidade.area"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Estado (id)" [(ngModel)]="id_estado"></ion-input>
+  </ion-item>
+  <ion-button (click)="salvar()">Salvar</ion-button>
+
+
+</ion-list>

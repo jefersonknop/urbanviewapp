@@ -12,16 +12,21 @@ body {
   --success:#4EA724;
 }
 
+ion-header{
+  margin-bottom: 2rem;
+}
+
 .titulo-adm{
   width: 100%;
   text-align: center;
 }
 
-.cadastro-adm{
+.cadastro-adm, .navegacao-adm{
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  padding: 0 15px
+  padding: 0 15px;
+  justify-content: center;
 }
 .cadastro-adm input{
   border-radius: 100px;
@@ -36,4 +41,35 @@ body {
   padding: 1rem;
   font-size: 1.25rem;
   background-color: var(--success);
+}
+
+.navegacao-adm button{
+  border-radius: 100px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: white;
+  border-color: var(--bg1);
+  color:var(--bg1);
+  font-weight: 600;
+}
+
+ion-list {
+  background-color: #00000000 !important;
+}
+
+.send-button{
+  border-radius: 100px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: var(--success) !important;
+}
+
+.send-button .button-native{
+  background-color: red;
+}
+
+.button-native{
+  background-color: #00000000 !important;
 }
